@@ -1,0 +1,11 @@
+body{
+    background-color: orange;
+}
+.taskList{
+    border: double;
+    padding: 5px;
+}
+.input{
+    border-bottom: groove;
+    padding-bottom: 10px;
+}

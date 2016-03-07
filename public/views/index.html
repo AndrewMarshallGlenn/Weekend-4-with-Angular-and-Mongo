@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+  <head lang="en">
+    <meta charset="UTF-8">
+    <title>To-Do List</title>
+    <script type="text/javascript" src="/vendors/angular.min.js"></script>
+    <script type="text/javascript" src="/vendors/angular-route.min.js"></script>
+    <script type="text/javascript" src="/scripts/app.js"></script>
+    <script type="text/javascript" src="/scripts/factories/taskFactory.js"></script>
+    <script type="text/javascript" src="/scripts/controllers/taskController.js"></script>
+    <link rel="stylesheet" type="text/css" href="styles/style.css">
+  </head>
+  <body>
+    <h1>To-Do List</h1>
+    <!--<div ng-include="'views/templates/navbar.html'"></div>-->
+    <h2>Your Tasks</h2>
+    <div class="taskList">
+    <main ng-view></main>
+    </div>
+  </body>
+</html>

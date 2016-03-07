@@ -1,0 +1,12 @@
+<form  class="input">
+  <label for="task">Task: </label>
+  <input type="text" ng-model="task" id="task"/>
+  <button ng-click="enterTask()">Submit</button>
+</form><br>
+
+<section id="taskListDisplay" ng-repeat="task in tasks">
+  <div>{{task.task}}<button ng-click="removeTask(task._id)">Remove</button>
+    <button ng-hide="task.status" ng-click="completeTask(task._id)">Completed</button>
+    <button ng-show="task.status" ng-click="resetTask(task._id)">Reset</button>
+    </div>
+</section>
